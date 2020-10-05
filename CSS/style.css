@@ -1,1 +1,9 @@
-/* CSS */
+.Square{
+width: 100px;
+height: 100px;
+background-color: #FF0000;
+position: absolute;
+top: 8px;
+left: 8px;
+
+}
