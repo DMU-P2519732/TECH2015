@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+}
+.slideshow {
+  position: relative;
+  height: 70vw;
+  overflow: hidden;
+}
+
+.navButton {
+  color: white;
+  opacity: 0;
+  font-size: 50px;
+  position: absolute;
+  top: calc(50% - 25px);
+  padding: 10px;
+  cursor: pointer;
+  transition: opacity 0.4s;
+}
+
+.slideshow:hover .navButton {
+  opacity: 1;
+}
+
+#leftButton {
+}
+
+#rightButton {
+  right: 0;
+}
+
+.slideshow img {
+  width: 100vw;
+  height: 70vw;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  display: none;
+  transition: opacity 0.4s;
+}
+
+@media screen and (hover: none) {
+  .navButton {
+    opacity: 1;
+  }
+}
