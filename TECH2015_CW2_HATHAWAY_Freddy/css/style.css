@@ -23,6 +23,12 @@ img, video {
   display: block;
 }
 
+.background-image {
+  background: linear-gradient(#8e9eab, #eef2f3);
+
+}
+
+
 /* Header Navbar Styles*/
 .nav-bar {
   display: flex;
@@ -71,12 +77,12 @@ img, video {
 
 .logo a {
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2.1rem;
 }
 
 .nav-menu a {
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   letter-spacing: 0.1rem;
   border-bottom: 1px solid #fff;
   transition: all ease 0.1s;
@@ -202,8 +208,27 @@ img, video {
   background: rgba(0, 0, 0, 0.3);
 }
 
+#hero-button-link {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+
 /* About Page */
 
+#hers {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+#about-herscover {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+
+}
 .about-page {
   padding: 2rem 1rem 10rem 1rem;
   display: grid;
@@ -213,11 +238,18 @@ img, video {
 
 .about-text {
   margin: 0.2 auto;
+  background-color:rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+.about-text p {
+  font-size: 1.5rem;
 }
 
 .about-text h1 {
   font-size: 2rem;
   line-height: 2rem;
+
 }
 
 .about-image img {
@@ -235,21 +267,79 @@ img, video {
   padding: 0 1rem 1rem 1rem;
 }
 
-/*Releases styles*/
+
+/*Releases Page*/
+
+#solus-background {
+  background-image: linear-gradient(#bdc3c7, #2c3e50);
+}
+
+#theleap-background {
+  background-image: linear-gradient(#e1eec3, #f05053);
+}
+
+#someonecrazy-background {
+  background-image: linear-gradient(#FFC371, #FF5F6D);
+}
+
+#pessopt-background {
+  background-image: linear-gradient(#F1F2B5, #135058);
+}
+
+.between-releases{
+  padding: 0 1rem 0.5rem 1rem;
+  margin: 0.2 auto;
+  color: white;
+}
+.release-song {
+  padding: 0 1rem 5rem 1rem;
+  margin: 0.2 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.release-title {
+  padding: 0 1rem 1rem 1rem;
+  margin: 0.2 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.release-song p {
+  font-size: 2rem;
+  line-height: 2rem;
+  width: 50%;
+
+}
+
+.release-video {
+  display: flex;
+  padding: 0 1rem 2rem 1rem;
+}
+
+.release-video video {
+  width: auto;
+  height: 450px;
+  display: block;
+  margin: 0 auto;
+}
+
 .gallery-page {
   padding: 0 1rem 10rem 1rem;
 }
 
 .releases-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   grid-gap: 0.5rem;
-  grid-auto-rows: 300px;
+  grid-auto-rows: 600px;
 }
 
 .gallery-item {
   height: 100%;
-  width: 100%
+  width: 100%;
   overflow: hidden;
 }
 
@@ -260,7 +350,7 @@ img, video {
 }
 
 .gallery-img:hover {
-  transform: scale(1.05);
+  transform: scale(1.5);
 }
 
 .gallery-span {
@@ -268,18 +358,194 @@ img, video {
   grid-auto-flow: dense;
 }
 
-.w-1, .w-2, .w-3, .w-4 {
-  grid-column: span 1;
+/*
+#solus-title{
+  font-size: 3rem;
 }
 
-.h-1, .h-2, .h-3, .h-4 {
-  grid-row: span 1;
+#solus-text {
+  font-size: 2.7rem;
+  line-height: 3rem;
+}
+#audio-solus {
+  width: 100%;
+}
+*/
+
+
+/*.desc-more {
+  text-decoration: none;
+  bottom: 0 !important;
+  opacity: 1 !important;
 }
 
-footer {
+*/
 
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #4d4d4d; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 20px; /* Some padding */
+  border-radius: 200px; /* Rounded corners */
+  font-size: 2rem; /* Increase font size */
+  font-weight: bold;
 }
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/*Shop Page*/
+
+.card-section {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #eee;
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.cards .new-arrival {
+  width: 100%;
+  margin-top: 20px;
+}
+
+
+.cards .new-arrival h1 {
+  text-align: center;
+  font-size: 50px;
+  color: #222;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.cards .new-arrival h1:after {
+  content: "";
+  height: 5px;
+  width: 400px;
+  background-color: #222;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+  margin-top: 12px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 2px 4px rgb(0,0,0,25%);
+  width: 325px;
+  text-align: center;
+  margin: 25px;
+  cursor: pointer;
+  background-color: #fff
+}
+
+.image-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+}
+
+.description {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.description h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #222;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+
+.description p {
+  font-size: 17px;
+  letter-spacing: 1.5px;
+  margin-top: 10px;
+}
+
+.description span {
+  margin-left: 8px;
+}
+
+.description del {
+  margin-left: 7px;
+  font-size: 15px;
+  color: #f2533a;
+}
+
+.button-group {
+  margin-top: 30px;
+}
+
+.button-group .buy {
+  background-color: #1976d2;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.button-group .buy:hover {
+  background-color: #0b348d;
+  transition: 0.5s ease;
+}
+
+.button-group .cart {
+  background-color: #f2533a;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.button-group .cart:hover {
+  background-color: #222;
+  transition: 0.5s ease;
+}
+
+.star-icons {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.star-icons i {
+  color: #db8b21;
+  padding: 0px 3px;
+  font-size: 18px;
+}
+
 /* Footer Nav Extra Styles */
+
 .footer-logo {
   white-space: nowrap;
 }
@@ -293,11 +559,17 @@ footer {
 .footer-social a {
   color: black;
   padding: 0 1rem;
+  font-size: 1.8rem;
+}
+
+.footer-nav a {
+  font-size: 2rem;
 }
 
 .footer-copyright {
   text-align: center;
-  padding-bottom: 2rem;
+  padding-bottom: 6rem;
+  font-size: 2rem;
 }
 
 /* Media Queries for larger screens */
@@ -341,32 +613,7 @@ footer {
     line-height: 1.5rem;
   }
 
-/* Grid row and columns for larger screens */
-  .w-1 {
-    grid-column: span 1;
-  }
-  .w-2 {
-    grid-column: span 2;
-  }
-  .w-3 {
-    grid-column: span 3;
-  }
-  .w-4 {
-    grid-column: span 4;
-  }
 
-  .h-1 {
-    grid-row: span 1;
-  }
-  .h-2 {
-    grid-row: span 2;
-  }
-  .h-3 {
-    grid-row: span 3;
-  }
-  .h-4 {
-    grid-row: span 4;
-  }
 
   .gallery-span {
     grid-template-columns: repeat(4, 1fr);
@@ -415,7 +662,13 @@ footer {
     line-height: 2rem;
   }
 
+
   .footer-nav {
     justify-content: space-evenly;
   }
+
+  #about-footer-nav, #releases-footer-nav, #index-footer-nav {
+    background-image: linear-gradient(#dfe5e7, #e4e9eb);
+  }
+
 }
