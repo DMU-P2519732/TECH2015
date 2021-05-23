@@ -407,7 +407,7 @@ img, video {
 .card-section {
   width: 100%;
   min-height: 100vh;
-  background-color: #eee;
+  background: linear-gradient(#8e9eab, #eef2f3)
 }
 
 .cards {
@@ -427,7 +427,8 @@ img, video {
 
 .cards .new-arrival h1 {
   text-align: center;
-  font-size: 50px;
+  font-size: 5rem;
+  line-height: 5rem;
   color: #222;
   text-transform: uppercase;
   font-weight: 700;
@@ -451,7 +452,7 @@ img, video {
   align-items: center;
   flex-direction: column;
   box-shadow: 0px 2px 4px rgb(0,0,0,25%);
-  width: 325px;
+  width: 600px;
   text-align: center;
   margin: 25px;
   cursor: pointer;
@@ -470,32 +471,32 @@ img, video {
   height: auto;
 }
 
-.description {
+.card-description {
   text-align: center;
   margin-top: 20px;
 }
 
-.description h1 {
-  font-size: 20px;
+.card-description h1 {
+  font-size: 3rem;
   text-transform: uppercase;
   color: #222;
   letter-spacing: 2px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
-.description p {
-  font-size: 17px;
+.card-description p {
+  font-size: 2rem;
   letter-spacing: 1.5px;
-  margin-top: 10px;
+  margin-top: 50px;
 }
 
-.description span {
+.card-description span {
   margin-left: 8px;
 }
 
-.description del {
+.card-description del {
   margin-left: 7px;
-  font-size: 15px;
+  font-size: 2rem;
   color: #f2533a;
 }
 
@@ -503,32 +504,57 @@ img, video {
   margin-top: 30px;
 }
 
-.button-group .buy {
+
+
+.button-group button {
   background-color: #1976d2;
-  font-size: 14px;
+  font-size: 2.5rem;
   padding: 8px 20px;
-  border-radius: 5px;
+  border-radius: 10px;
   text-decoration: none;
   letter-spacing: 1px;
   color: #fff;
 }
 
-.button-group .buy:hover {
+.button-group button:hover {
   background-color: #0b348d;
   transition: 0.5s ease;
 }
 
-.button-group .cart {
+.checkout {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#items-count {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #f2533a;
+  margin: 20px;
+}
+
+#total-price {
+  margin: 5px;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.checkout button {
+  margin-right: 100px;
   background-color: #f2533a;
-  font-size: 14px;
+  font-size: 2.5rem;
   padding: 8px 20px;
-  border-radius: 5px;
+  border-radius: 40px;
   text-decoration: none;
   letter-spacing: 1px;
   color: #fff;
 }
 
-.button-group .cart:hover {
+.checkout button:hover {
   background-color: #222;
   transition: 0.5s ease;
 }
@@ -541,7 +567,7 @@ img, video {
 .star-icons i {
   color: #db8b21;
   padding: 0px 3px;
-  font-size: 18px;
+  font-size: 3rem;
 }
 
 /* Footer Nav Extra Styles */
