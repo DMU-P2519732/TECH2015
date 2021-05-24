@@ -45,7 +45,7 @@ img, video {
 }
 
 .logo, .nav-item {
-  white-space: nowrap;
+  white-space: nowrap; /*Keeps logos from collapsing on single line*/
 }
 
 .nav-menu {
@@ -59,7 +59,7 @@ img, video {
 }
 
 .nav-item {
-  flex: 1 1 33.3%;
+  flex: 1 0 33.3%;
   text-align: center;
 }
 
@@ -77,12 +77,11 @@ img, video {
 
 .logo a {
   font-weight: 700;
-  font-size: 2.1rem;
+  font-size: 2rem;
 }
 
 .nav-menu a {
   font-weight: 400;
-  font-size: 1.7rem;
   letter-spacing: 0.1rem;
   border-bottom: 1px solid #fff;
   transition: all ease 0.1s;
@@ -95,7 +94,7 @@ img, video {
 /* Hero Header Navbar Changes */
 
 .hero-nav {
-  background: none;
+  background: none; /* Removes background colour */
   grid-column: 1 / -1;
   grid-row: 1 / -1;
   background: none;
@@ -108,11 +107,11 @@ img, video {
 }
 
 .hero-nav .nav-menu a:hover {
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff; /*Changing the hover state to a white border*/
 }
 
 .hero-nav .nav-menu a {
-  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  border-bottom: 1px solid rgba(0, 0, 0, 0); /*Change black border to a clear one*/
 }
 
 /* Homepage Hero */
@@ -172,7 +171,7 @@ img, video {
 
 .hero-heading {
   font-size: 1.5rem;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.05rem;
   font-weight: bold;
   text-transform: uppercase;
   color: white;
@@ -180,7 +179,7 @@ img, video {
 
 .hero-text {
   font-size: 1rem;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   color: white;
 }
 
@@ -211,7 +210,7 @@ img, video {
 #hero-button-link {
   text-decoration: none;
   color: white;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 /* About Page */
@@ -590,7 +589,7 @@ img, video {
 }
 
 .footer-nav a {
-  font-size: 2rem;
+
 }
 
 .footer-copyright {
