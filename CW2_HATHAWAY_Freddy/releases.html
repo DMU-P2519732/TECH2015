@@ -37,6 +37,51 @@
   </header>
 
   <main class="gallery-page">
+    <h1>Artwork Gallery</h1>
+
+    <section class="releases-gallery gallery-span">
+      <div class="gallery-item">
+
+        <a href="Image/Solus.jpg" class="glightbox" data-glightbox="description: .custom-desc1;"><img src="Image/Solus.jpg" alt="Single cover for Solus" title="Solus" class="gallery-img"></a>
+
+        <div class="glightbox-desc custom-desc1">
+  <h1>Solus</h1>
+  </div>
+      </div>
+
+
+      <div class="gallery-item">
+        <a href="Video/TheLeap.mp4" class="glightbox" data-glightbox="title: ; description: .custom-desc2;"><img src="Image/theleapidea.jpg" alt ="Single cover for The Leap" title="The Leap" class="gallery-img"></a>
+        <div class="glightbox-desc custom-desc2">
+          <h1>The Leap</h1>
+        </div>
+        <video controls>
+          <source src="Video/TheLeap.mp4" type="video/mp4">
+          <source src="Video/TheLeap.webm" type="video/webm">
+          Your browser does not support the video element.
+        </video>
+      </div>
+      <div class="gallery-item">
+        <a href="Image/SomeoneCrazyAlbumCover.jpg" class="glightbox" data-glightbox="title:; description: .custom-desc3">
+  <img src="Image/SomeoneCrazyAlbumCover.jpg" alt="image" class="gallery-img"/>
+  <div class="glightbox-desc custom-desc3">
+    <h1>Someone Crazy</h1>
+  </div>
+  </a>
+
+
+      </div>
+      <div class="gallery-item">
+        <a href="Image/albumcoveridea.jpg" class="glightbox" data-glightbox="title:; description: .custom-desc4"><img src="Image/albumcoveridea.jpg" alt="Single cover for Pessimistic Optimism" title="Feel Now" class="gallery-img">
+        </a>
+        <div class="glightbox-desc custom-desc4">
+          <h1>Pessimistic Optimism</h1>
+        </div>
+      </div>
+
+    </section>
+
+
 
 <div class="release-background" id="solus-background">
 
@@ -113,46 +158,9 @@
     </div>
 </div>
 <div class="between-releases"></div>
-    <h1>Artwork Gallery</h1>
-
-    <section class="releases-gallery">
-      <div class="gallery-item">
-        <a href="Image/Solus.jpg" class="glightbox" data-glightbox="description: .custom-desc1;"><img src="Image/Solus.jpg" alt="Single cover for Solus" title="Solus" class="gallery-img"></a>
-        <div class="glightbox-desc custom-desc1">
-  <h1>Solus</h1>
-</div>
-      </div>
-
-      <div class="gallery-item">
-        <a href="Video/TheLeap.mp4" class="glightbox" data-glightbox="title: ; description: .custom-desc2;"><img src="Image/theleapidea.jpg" alt ="Single cover for The Leap" title="The Leap" class="gallery-img"></a>
-        <div class="glightbox-desc custom-desc2">
-          <h1>The Leap</h1>
-        </div>
-        <video controls>
-          <source src="Video/TheLeap.mp4" type="video/mp4">
-          <source src="Video/TheLeap.webm" type="video/webm">
-          Your browser does not support the video element.
-        </video>
-      </div>
-      <div class="gallery-item">
-        <a href="Image/SomeoneCrazyAlbumCover.jpg" class="glightbox" data-glightbox="title:; description: .custom-desc3">
-  <img src="Image/SomeoneCrazyAlbumCover.jpg" alt="image" class="gallery-img"/>
-  <div class="glightbox-desc custom-desc3">
-    <h1>Someone Crazy</h1>
-  </div>
-</a>
 
 
-      </div>
-      <div class="gallery-item">
-        <a href="Image/albumcoveridea.jpg" class="glightbox" data-glightbox="title:; description: .custom-desc4"><img src="Image/albumcoveridea.jpg" alt="Single cover for Pessimistic Optimism" title="Feel Now" class="gallery-img">
-        </a>
-        <div class="glightbox-desc custom-desc4">
-          <h1>Pessimistic Optimism</h1>
-        </div>
-      </div>
 
-    </section>
   </main>
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   <footer>
@@ -175,11 +183,12 @@
     <p class="footer-copyright">Copyright &copy; 2021</p>
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   </footer>
+  </div>
   <script src="js/glightbox.min.js"></script>
   <script type="text/javascript">
     const lightbox = GLightbox({loop: true});
   </script>
-</div>
+
   </body>
 
 </html>
