@@ -35,13 +35,16 @@
       </ul>
     </nav>
   </header>
-
+  <!-- Adding a main class of gallery-page -->
   <main class="gallery-page">
     <h1>Artwork Gallery</h1>
-
+    <!-- Adding section that will include the releases gallery. Inside of this, all of the gallery items will be made. These will be presented in a grid -->
     <section class="releases-gallery gallery-span">
       <div class="gallery-item">
-
+        <!-- Inside of the div, there will be links that go to each of the images. A lightbox will display these images -->
+        <!-- A of class glightbox is created. The reference will link to the image. Inbetween the two linking tags, the image is added. The image had a class of gallery-img. The source of the image is the same as the reference. -->
+        <!-- A title tag is added which is shown when the cursor hovers over the image -->
+        <!-- Once this was created, it was duplicated 3 more times for the other images -->
         <a href="Image/Solus.jpg" class="glightbox" data-glightbox="description: .custom-desc1;"><img src="Image/Solus.jpg" alt="Single cover for Solus" title="Solus" class="gallery-img"></a>
 
         <div class="glightbox-desc custom-desc1">
@@ -49,7 +52,7 @@
   </div>
       </div>
 
-
+      <!-- A video was added instead of an image -->
       <div class="gallery-item">
         <a href="Video/TheLeap.mp4" class="glightbox" data-glightbox="title: ; description: .custom-desc2;"><img src="Image/theleapidea.jpg" alt ="Single cover for The Leap" title="The Leap" class="gallery-img"></a>
         <div class="glightbox-desc custom-desc2">
@@ -71,6 +74,7 @@
 
 
       </div>
+      <!-- Each gallery item can span if w-number and h-number is added inside of the gallery item div name. This will change the appearence of the gallery items -->
       <div class="gallery-item">
         <a href="Image/albumcoveridea.jpg" class="glightbox" data-glightbox="title:; description: .custom-desc4"><img src="Image/albumcoveridea.jpg" alt="Single cover for Pessimistic Optimism" title="Feel Now" class="gallery-img">
         </a>
@@ -82,7 +86,7 @@
     </section>
 
 
-
+<!-- This section includes an audio file of the songs shown inside of the releases gallery. A title with a desciption is added, as well as the audio player. Similarly to the div gallery-item, duplicates of this were created for the other 3 songs  -->
 <div class="release-background" id="solus-background">
 
     <div class="release-title">
@@ -184,6 +188,7 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   </footer>
   </div>
+  <!-- Just before the closing of the body tag, a script is added for the lightbox to work on the releases gallery  -->
   <script src="js/glightbox.min.js"></script>
   <script type="text/javascript">
     const lightbox = GLightbox({loop: true});
